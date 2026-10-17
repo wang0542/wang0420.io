@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>红楼梦：为什么林黛玉活不过大观园 · AI 讲解视频自动生成</title>
+<style>
+:root{
+  --paper:#f4efe6;
+  --paper-2:#efe7d9;
+  --ink:#241f1c;
+  --ink-2:#4a423b;
+  --ink-3:#7d7268;
+  --line:#d8cdb9;
+  --cinnabar:#a83c2c;
+  --cinnabar-l:#c9573f;
+  --gold:#8a6a3a;
+  --card:#fbf8f2;
+  --shadow:0 1px 2px rgba(36,31,28,.05),0 8px 28px rgba(36,31,28,.06);
+  --serif:"Songti SC","STSong","Noto Serif SC","Source Han Serif SC",serif;
+  --sans:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --mono:"SF Mono",Consolas,"Courier New",monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(168,60,44,.04),transparent 42%),
+    radial-gradient(circle at 88% 30%,rgba(138,106,58,.05),transparent 45%);
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .18 0 0 0 0 .16 0 0 0 0 .13 0 0 0 .035 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:0 28px}
+
+/* ---------- 导航 ---------- */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(244,239,230,.9);
+  backdrop-filter:blur(14px) saturate(1.3);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{max-width:1080px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:26px;height:58px;overflow-x:auto;scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+.brand{font-family:var(--serif);font-size:16px;font-weight:700;white-space:nowrap;letter-spacing:.06em;color:var(--cinnabar)}
+.nav-in a{
+  color:var(--ink-3);text-decoration:none;font-size:13.5px;white-space:nowrap;
+  padding:4px 0;border-bottom:1.5px solid transparent;transition:.22s;
+}
+.nav-in a:hover{color:var(--ink);border-bottom-color:var(--cinnabar)}
+
+/* ---------- HERO ---------- */
+header{padding:88px 0 60px;position:relative}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--cinnabar);color:var(--cinnabar);
+  padding:5px 14px;border-radius:100px;font-size:12px;letter-spacing:.14em;
+  margin-bottom:26px;
+}
+.badge i{width:5px;height:5px;background:var(--cinnabar);border-radius:50%;display:block}
+h1{
+  font-family:var(--serif);font-size:clamp(34px,5.4vw,60px);
+  line-height:1.22;font-weight:700;letter-spacing:.02em;margin-bottom:8px;
+}
+h1 em{font-style:normal;color:var(--cinnabar)}
+.sub{font-family:var(--serif);font-size:clamp(17px,2.2vw,23px);color:var(--ink-2);margin-bottom:22px;font-weight:400}
+.lede{max-width:640px;color:var(--ink-2);font-size:15.5px;margin-bottom:34px}
+.meta{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card);max-width:720px}
+.meta div{padding:13px 22px;border-right:1px solid var(--line);flex:1;min-width:104px}
+.meta div:last-child{border-right:0}
+.meta dt{font-size:11px;color:var(--ink-3);letter-spacing:.1em;margin-bottom:3px}
+.meta dd{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--ink)}
+.hero-art{margin:44px 0 0;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#fff}
+.hero-art img{width:100%;display:block}
+
+/* ---------- 通用区块 ---------- */
+section{padding:66px 0;border-top:1px solid var(--line)}
+.sec-no{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--cinnabar);margin-bottom:10px}
+h2{font-family:var(--serif);font-size:clamp(25px,3.6vw,34px);font-weight:700;margin-bottom:12px;letter-spacing:.02em}
+.sec-desc{color:var(--ink-2);max-width:700px;margin-bottom:34px;font-size:15px}
+h3{font-family:var(--serif);font-size:19px;margin:32px 0 12px;font-weight:700}
+p{margin-bottom:14px}
+
+/* ---------- 卡片 ---------- */
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 28px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(228px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(172px,1fr))}
+
+/* ---------- 1 选题 ---------- */
+.pick-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+@media(max-width:820px){.pick-grid{grid-template-columns:1fr}}
+.pick-main{padding:30px}
+.pick-main .kicker{font-family:var(--serif);font-size:13px;color:var(--cinnabar);letter-spacing:.14em;margin-bottom:12px}
+.pick-main h3{font-size:27px;margin:0 0 6px;line-height:1.42}
+.pick-main .why{color:var(--ink-3);font-size:14px;margin-bottom:20px}
+.reason{list-style:none;border-top:1px dashed var(--line);padding-top:16px}
+.reason li{position:relative;padding-left:22px;margin-bottom:10px;font-size:14.5px;color:var(--ink-2)}
+.reason li::before{content:"◆";position:absolute;left:0;top:0;color:var(--cinnabar);font-size:9px;line-height:2.1}
+.reason b{color:var(--ink)}
+.side{display:flex;flex-direction:column;gap:18px}
+.alt{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;flex:1}
+.alt h4{font-size:12px;letter-spacing:.14em;color:var(--cinnabar);margin-bottom:14px;font-weight:700}
+.alt-t{display:flex;gap:10px;margin-bottom:12px;align-items:flex-start}
+.alt-t span{font-size:10.5px;color:#fff;background:var(--ink-3);padding:2px 8px;border-radius:4px;white-space:nowrap;margin-top:5px;font-family:var(--mono)}
+.alt-t p{font-family:var(--serif);font-size:15.5px;margin:0;line-height:1.6}
+.alt-t.win span{background:var(--cinnabar)}
+
+/* ---------- 2 策划 ---------- */
+.pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:26px}
+@media(max-width:760px){.pipe{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.pipe{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);padding:22px 20px;position:relative}
+.step:first-child{border-radius:12px 0 0 12px}
+.step:last-child{border-radius:0 12px 12px 0}
+.step .n{font-family:var(--mono);font-size:11px;color:var(--cinnabar);letter-spacing:.1em}
+.step h4{font-family:var(--serif);font-size:17px;margin:8px 0 4px}
+.step small{color:var(--ink-3);font-size:12.5px;display:block;line-height:1.7}
+.step .arrow{position:absolute;right:-9px;top:50%;transform:translateY(-50%);width:16px;height:16px;background:var(--paper);border-top:1px solid var(--line);border-right:1px solid var(--line);transform:translateY(-50%) rotate(45deg);z-index:2}
+.step:last-child .arrow{display:none}
+@media(max-width:760px){.step .arrow{display:none}}
+
+table{width:100%;border-collapse:collapse;font-size:14px;margin-bottom:22px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--paper-2);font-size:12px;letter-spacing:.1em;color:var(--ink-2);font-weight:700;white-space:nowrap}
+tbody tr:hover{background:rgba(168,60,44,.03)}
+td.n{font-family:var(--mono);color:var(--cinnabar);font-size:13px;white-space:nowrap}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.tblcap{font-size:12.5px;color:var(--ink-3);margin:-12px 0 22px}
+
+.rhythm{display:flex;height:52px;border-radius:10px;overflow:hidden;border:1px solid var(--line);margin-bottom:10px}
+.rhythm div{display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;font-family:var(--mono)}
+.rl{display:flex;gap:10px;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+
+/* ---------- 3 文案 ---------- */
+.copy-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.copy-tabs button{
+  font-family:var(--serif);font-size:14px;padding:8px 18px;border-radius:100px;
+  border:1px solid var(--line);background:var(--card);color:var(--ink-2);cursor:pointer;transition:.2s;
+}
+.copy-tabs button:hover{border-color:var(--ink-3)}
+.copy-tabs button.on{background:var(--cinnabar);color:#fff;border-color:var(--cinnabar)}
+.copy-pane{display:none}
+.copy-pane.on{display:block}
+.seg{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--cinnabar);border-radius:0 12px 12px 0;padding:20px 24px;margin-bottom:14px}
+.seg .hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;gap:12px}
+.seg .hd b{font-family:var(--serif);font-size:16px}
+.seg .hd em{font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--ink-3);white-space:nowrap}
+.seg p{font-family:var(--serif);font-size:15.5px;line-height:1.95;margin:0;color:var(--ink)}
+.seg .tag{margin-top:10px;font-size:12.5px;color:var(--cinnabar);opacity:.85}
+mark{background:linear-gradient(transparent 62%,rgba(168,60,44,.2) 62%);padding:0 1px;color:inherit}
+
+/* ---------- 4 素材 ---------- */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:18px}
+.shot{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:.3s;cursor:pointer}
+.shot:hover{transform:translateY(-4px);box-shadow:0 4px 10px rgba(36,31,28,.07),0 16px 40px rgba(36,31,28,.11)}
+.shot .ph{position:relative;overflow:hidden;background:var(--paper-2)}
+.shot .ph img{width:100%;display:block;transition:.55s}
+.shot:hover .ph img{transform:scale(1.045)}
+.shot .no{position:absolute;left:12px;top:12px;background:rgba(36,31,28,.76);color:#fff;font-family:var(--mono);font-size:11px;padding:3px 9px;border-radius:5px;letter-spacing:.08em}
+.shot .dur{position:absolute;right:12px;top:12px;background:rgba(244,239,230,.9);color:var(--ink);font-family:var(--mono);font-size:11px;padding:3px 8px;border-radius:5px}
+.shot .bd{padding:16px 18px}
+.shot .bd h5{font-family:var(--serif);font-size:15.5px;margin-bottom:5px}
+.shot .bd p{font-size:13px;color:var(--ink-3);line-height:1.7;margin:0}
+.shot .bd .emo{margin-top:9px;font-size:11.5px;color:var(--cinnabar);letter-spacing:.06em}
+.lightbox{position:fixed;inset:0;background:rgba(28,24,21,.92);z-index:200;display:none;align-items:center;justify-content:center;padding:36px;cursor:zoom-out}
+.lightbox.on{display:flex}
+.lightbox img{max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 20px 70px rgba(0,0,0,.5)}
+.lightbox .cap{position:absolute;bottom:26px;left:0;right:0;text-align:center;color:#e8dfd0;font-family:var(--serif);font-size:14px}
+
+.assets-tbl td code{font-family:var(--mono);font-size:12px;color:var(--gold);background:rgba(138,106,58,.09);padding:2px 7px;border-radius:4px}
+
+/* ---------- 5 方法 ---------- */
+.methods{display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:18px}
+.m{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px;position:relative}
+.m .ico{font-size:20px;margin-bottom:10px;display:block}
+.m h4{font-family:var(--serif);font-size:17px;margin-bottom:9px}
+.m p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.78}
+.m .num{position:absolute;right:20px;top:18px;font-family:var(--serif);font-size:32px;color:var(--line);font-weight:700;line-height:1}
+
+.pitfall{border-left:3px solid var(--cinnabar);background:linear-gradient(90deg,rgba(168,60,44,.05),transparent 70%);border-radius:0 12px 12px 0;padding:20px 24px;margin-top:22px}
+.pitfall h4{font-family:var(--serif);font-size:16px;color:var(--cinnabar);margin-bottom:8px}
+.pitfall p{font-size:13.5px;color:var(--ink-2);margin-bottom:8px}
+.pitfall p:last-child{margin:0}
+.pitfall code{font-family:var(--mono);font-size:12.5px;background:rgba(36,31,28,.07);padding:2px 7px;border-radius:4px;color:var(--ink)}
+.pitfall .fix{color:var(--ink);font-weight:600}
+
+/* ---------- 6 工具 ---------- */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:14px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;transition:.25s}
+.tool:hover{border-color:var(--cinnabar);transform:translateY(-3px)}
+.tool .th{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:6px}
+.tool h4{font-family:var(--serif);font-size:16px}
+.tool .ver{font-family:var(--mono);font-size:10.5px;color:#fff;background:var(--gold);padding:2px 7px;border-radius:4px}
+.tool .role{font-size:11.5px;color:var(--cinnabar);letter-spacing:.08em;margin-bottom:8px}
+.tool p{font-size:13px;color:var(--ink-2);margin:0;line-height:1.75}
+
+.skill-tree{background:#221e1b;color:#d8cdb9;border-radius:14px;padding:26px 28px;margin-top:22px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;line-height:2.05;white-space:pre}
+.skill-tree .c{color:#8a7d6e}
+.skill-tree .k{color:#e0a08c}
+.skill-tree .d{color:#9db98f}
+.skill-tree .p{color:#c9a86a}
+
+.skill-files{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:18px}
+.sf{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.sf b{font-family:var(--mono);font-size:12px;color:var(--cinnabar);display:block;margin-bottom:4px}
+.sf span{font-size:12.5px;color:var(--ink-3);line-height:1.6}
+
+/* ---------- 7 视频 ---------- */
+.player{background:#1c1916;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(28,25,22,.28);border:1px solid var(--line)}
+.player video{width:100%;display:block;background:#1c1916}
+.player-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 24px;background:#26211d;color:#b9ae9e;flex-wrap:wrap}
+.player-bar .spec{font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.player-bar .dl{color:#e0a08c;text-decoration:none;font-size:13px;border:1px solid rgba(224,160,140,.4);padding:6px 15px;border-radius:6px;transition:.2s;font-family:var(--mono)}
+.player-bar .dl:hover{background:rgba(224,160,140,.14)}
+.bm{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:12px;margin-top:22px}
+.bm-item{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:15px 16px;cursor:pointer;transition:.22s}
+.bm-item:hover{border-color:var(--cinnabar);background:#fff}
+.bm-item.on{border-color:var(--cinnabar);background:rgba(168,60,44,.06)}
+.bm-item .t{font-family:var(--mono);font-size:11px;color:var(--cinnabar);margin-bottom:4px}
+.bm-item .n{font-family:var(--serif);font-size:14.5px;line-height:1.45}
+.bm-item .d{font-family:var(--mono);font-size:11px;color:var(--ink-3);margin-top:5px}
+
+audio{width:100%;margin-top:5px;height:34px}
+
+/* ---------- 8 总结 ---------- */
+.sum-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(276px,1fr));gap:18px;margin-bottom:28px}
+.sum{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px}
+.sum h4{font-family:var(--serif);font-size:17px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.sum ul{list-style:none}
+.sum li{font-size:13.5px;color:var(--ink-2);margin-bottom:9px;padding-left:18px;position:relative;line-height:1.75}
+.sum li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--cinnabar);opacity:.65}
+.sum li b{color:var(--ink)}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(136px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:30px}
+.stat{background:var(--card);padding:22px 18px;text-align:center}
+.stat b{display:block;font-family:var(--serif);font-size:31px;color:var(--cinnabar);line-height:1.2}
+.stat span{font-size:11.5px;color:var(--ink-3);letter-spacing:.1em}
+
+.next{background:linear-gradient(135deg,#241f1c,#3a322c);color:#e8dfd0;border-radius:16px;padding:34px 36px}
+.next h4{font-family:var(--serif);font-size:20px;color:#fff;margin-bottom:16px}
+.next ol{margin-left:20px}
+.next li{font-size:14px;margin-bottom:9px;line-height:1.8}
+.next code{font-family:var(--mono);font-size:12.5px;background:rgba(255,255,255,.1);padding:2px 8px;border-radius:4px;color:#e0a08c}
+
+footer{padding:44px 0 56px;border-top:1px solid var(--line);text-align:center;color:var(--ink-3);font-size:12.5px}
+footer b{font-family:var(--serif);color:var(--ink-2);font-weight:400;font-size:14px;display:block;margin-bottom:6px}
+
+.reveal{opacity:0;transform:translateY(22px);transition:.75s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="nav-in">
+  <span class="brand">红楼梦 · 黛玉之死</span>
+  <a href="#pick">选题</a><a href="#plan">策划</a><a href="#copy">文案</a>
+  <a href="#asset">素材</a><a href="#method">方法</a><a href="#tool">工具</a>
+  <a href="#video">视频</a><a href="#sum">总结</a>
+</div></nav>
+
+<div class="wrap">
+
+<header class="reveal">
+  <div class="badge"><i></i>作业一 · AI 讲解视频自动生成技能</div>
+  <h1>为什么林黛玉<br>活不过<em>大观园</em></h1>
+  <p class="sub">《红楼梦》名著讲解视频 · 全流程 AI 自动化</p>
+  <p class="lede">
+    输入一个书名，自动产出一部 133 秒的讲解视频——剧本、配音、AI 配图、字幕、转场、成片一次跑完。
+    本页完整呈现从选题策划到技能沉淀的全过程。
+  </p>
+  <dl class="meta">
+    <div><dt>成片时长</dt><dd>133.83s</dd></div>
+    <div><dt>分镜场次</dt><dd>7 场</dd></div>
+    <div><dt>AI 配图</dt><dd>7 张</dd></div>
+    <div><dt>字幕条数</dt><dd>44 条</dd></div>
+    <div><dt>输出规格</dt><dd>1080P</dd></div>
+  </dl>
+  <div class="hero-art">
+    <img src="assets/img/scene_01.jpg" alt="黛玉泪痕特写 · 全片风格锚点基准图">
+  </div>
+</header>
+
+<!-- 1 选题 -->
+<section id="pick" class="reveal">
+  <div class="sec-no">01 / TOPIC</div>
+  <h2>选题</h2>
+  <p class="sec-desc">
+    《红楼梦》可切入的角度不下二十个。要在 2 分钟内讲清一个足够复杂的问题，选角度比选书更重要。
+  </p>
+
+  <div class="pick-grid">
+    <div class="card pick-main">
+      <div class="kicker">最终选定</div>
+      <h3>林黛玉之死<br>——一个没能学会妥协的人</h3>
+      <p class="why">切入角度：黛玉之死 · 视频形式：讲解型 + 情境再现混合</p>
+      <ul class="reason">
+        <li><b>悬念自带传播度。</b>"活不过大观园"六个字就是钩子，不必额外制造冲突。</li>
+        <li><b>一条视频能串起四条线。</b>人物性格、等级秩序、诗社才情、礼教压迫，全部收在"她的死因"这一个问题上。</li>
+        <li><b>有稳定的解读共识。</b>黛玉之死是全书公认的核心争议点，公认解读充足，不触碰内容红线。</li>
+        <li><b>情绪基调自带辨识度。</b>水墨写意 + 克制叙事，与市面上的搞笑吐槽风名著解说形成区隔。</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="alt">
+        <h4>落选角度对比</h4>
+        <div class="alt-t"><span>主角</span><p>宝钗——最会做人的人，为什么也没赢</p></div>
+        <div class="alt-t"><span>结构</span><p>大观园的盛与衰，一座园子的经济学</p></div>
+        <div class="alt-t"><span>技法</span><p>诗词解读：黛玉的诗为什么最好</p></div>
+        <div class="alt-t win"><span>采用</span><p>黛玉之死——冲突最集中，钩子最锋利</p></div>
+      </div>
+      <div class="alt">
+        <h4>标题备选</h4>
+        <div class="alt-t win"><span>主推</span><p>《红楼梦》为什么林黛玉活不过大观园</p></div>
+        <div class="alt-t"><span>悬念</span><p>她今年十八岁｜林黛玉是怎么一步步走向死亡的</p></div>
+        <div class="alt-t"><span>解读</span><p>《红楼梦》里最锋利的一把刀，是她自己的脾气吗</p></div>
+        <div class="alt-t"><span>情感</span><p>愿赌服输，是黛玉的温柔，也是她的失败</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 策划 -->
+<section id="plan" class="reveal">
+  <div class="sec-no">02 / PLAN</div>
+  <h2>策划</h2>
+  <p class="sec-desc">
+    核心决策：让 <code style="font-family:var(--mono);font-size:13px;color:var(--gold)">storyboard.json</code> 成为整条流水线的<strong>单一事实来源</strong>。
+    剧本、语音、配图、字幕、成片五个环节全部读它——改一处，全链可重跑。
+  </p>
+
+  <div class="pipe">
+    <div class="step"><div class="n">STEP 01</div><h4>剧本</h4><small>标题 · 分镜<br>口播 · 提示词</small><div class="arrow"></div></div>
+    <div class="step"><div class="n">STEP 02</div><h4>语音</h4><small>TTS 合成<br>时长实测</small><div class="arrow"></div></div>
+    <div class="step"><div class="n">STEP 03</div><h4>配图</h4><small>锚点链派生<br>风格不漂移</small><div class="arrow"></div></div>
+    <div class="step"><div class="n">STEP 04</div><h4>成片</h4><small>字幕 · 转场<br>合成输出</small><div class="arrow"></div></div>
+  </div>
+
+  <h3>分镜节奏骨架</h3>
+  <div class="rhythm">
+    <div style="flex:18;background:#8a6a3a">钩子 18s</div>
+    <div style="flex:19;background:#9a7a45">铺陈 19s</div>
+    <div style="flex:19;background:#a86a44">冲突 19s</div>
+    <div style="flex:21;background:#b8574a">转折 21s</div>
+    <div style="flex:22;background:#a83c2c">高潮 22s</div>
+    <div style="flex:20;background:#8f4a3f">点题 20s</div>
+    <div style="flex:18;background:#6f5a50">留白 18s</div>
+  </div>
+  <div class="rl"><span>00:00</span><span>钩子决定前 8 秒去留</span><span>02:13</span></div>
+
+  <h3>镜头表</h3>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>镜号</th><th>场次</th><th>画面</th><th>情绪落点</th><th>时长</th><th>转场</th><th>字幕</th></tr></thead>
+      <tbody>
+        <tr><td class="n">01</td><td>冷开场：一个活不过二十岁的诗人</td><td>黛玉泪痕未干的侧脸特写</td><td>悬念、压抑</td><td class="n">18.08s</td><td class="n">—</td><td class="n">12 条</td></tr>
+        <tr><td class="n">02</td><td>铺陈：寄居在贾府的一门亲戚</td><td>俯视大观园全景，人物如点景</td><td>铺陈、富贵</td><td class="n">19.12s</td><td class="n">0.4s 溶解</td><td class="n">7 条</td></tr>
+        <tr><td class="n">03</td><td>冲突：她的尖刻不是脾气，是警报</td><td>庭院对峙，衣袖扬起、众人退散</td><td>紧张、锋利</td><td class="n">18.86s</td><td class="n">0.4s 溶解</td><td class="n">6 条</td></tr>
+        <tr><td class="n">04</td><td>转折：宝钗的对照面</td><td>双女同框，两人互不对视</td><td>对照、微妙</td><td class="n">20.56s</td><td class="n">0.4s 溶解</td><td class="n">6 条</td></tr>
+        <tr><td class="n">05</td><td>高潮：金玉良缘的判决</td><td>金锁与旧帕隔空对望</td><td>压抑、宿命</td><td class="n">21.66s</td><td class="n">0.4s 溶解</td><td class="n">7 条</td></tr>
+        <tr><td class="n">06</td><td>点题：一场完美的提前离场</td><td>潇湘馆残烛，窗外虚焦红绸</td><td>悲怆、极静</td><td class="n">19.64s</td><td class="n">0.4s 溶解</td><td class="n">6 条</td></tr>
+        <tr><td class="n">07</td><td>留白：木石前盟，尚未兑现</td><td>竹影落满石阶，人物已去</td><td>释然、余韵</td><td class="n">18.31s</td><td class="n">0.4s 溶解</td><td class="n">6 条</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="tblcap">场间统一 0.4s 交叉溶解（xfade + acrossfade），每场画面带 1.08× 缓慢推镜（zoompan）。</p>
+
+  <h3>配乐与静默</h3>
+  <div class="grid g3">
+    <div class="card"><h4 style="font-family:var(--serif);font-size:16px;margin-bottom:6px">开场 · 静默</h4><p style="font-size:13.5px;color:var(--ink-2);margin:0">第 1 场前 18 秒不放音乐。钩子需要的是安静，不是煽情。</p></div>
+    <div class="card"><h4 style="font-family:var(--serif);font-size:16px;margin-bottom:6px">高潮 · 压迫</h4><p style="font-size:13.5px;color:var(--ink-2);margin:0">第 5 场低频鼓 + 弦乐渐强，音量压到 -16dB，仍要让旁白清楚。</p></div>
+    <div class="card"><h4 style="font-family:var(--serif);font-size:16px;margin-bottom:6px">点题 · 撤空</h4><p style="font-size:13.5px;color:var(--ink-2);margin:0">第 6 场音乐几乎撤空，只留残烛与远处爆竹虚声。留白比配乐更有力。</p></div>
+  </div>
+</section>
+
+<!-- 3 文案 -->
+<section id="copy" class="reveal">
+  <div class="sec-no">03 / SCRIPT</div>
+  <h2>文案</h2>
+  <p class="sec-desc">
+    口播稿由 TTS <strong>原样朗读</strong>，因此不含任何标记性括号或占位符——停顿全部交给标点控制。
+    点下方标签查看每场文案与配音实测时长。
+  </p>
+
+  <div class="copy-tabs" id="tabs">
+    <button class="on" data-i="0">全片</button>
+    <button data-i="1">开场钩子</button>
+    <button data-i="2">冲突</button>
+    <button data-i="3">高潮</button>
+    <button data-i="4">点题</button>
+    <button data-i="5">留白</button>
+  </div>
+
+  <div class="copy-pane on" data-p="0">
+    <div class="seg">
+      <div class="hd"><b>段 01 · 冷开场</b><em>18.08s / 12 条字幕</em></div>
+      <p>在中国古代文学里，有一位<mark>才华横溢的诗人</mark>，却只活了<mark>十八岁</mark>。她叫林黛玉。一部书，把她写得太好看，好看到今天还有人在争论，她到底是被谁害死的。</p>
+      <div class="tag">重音：十八岁 / 林黛玉 / 被谁害死 —— 首句后停 1 秒，让"十八岁"落地</div>
+      <audio controls preload="none" src="assets/audio/seg_01.mp3"></audio>
+    </div>
+    <div class="seg">
+      <div class="hd"><b>段 02 · 铺陈</b><em>19.12s / 7 条字幕</em></div>
+      <p>故事要从一座园子说起。贾府的大观园，元妃省亲时建成，随即<mark>解散重组</mark>，园子里的姑娘少爷，正是<mark>青春最盛</mark>的时候。黛玉从扬州来到荣国府，寄居在贾母身边。</p>
+      <div class="tag">重音：大观园 / 解散重组 / 青春最盛 / 寄居</div>
+      <audio controls preload="none" src="assets/audio/seg_02.mp3"></audio>
+    </div>
+    <div class="seg">
+      <div class="hd"><b>段 03 · 冲突</b><em>18.86s / 6 条字幕</em></div>
+      <p>初来乍到，黛玉做的第一件事，是<mark>防守</mark>。她说话带刺，笑里藏针，连下人也不放过。人们只当她小性儿，可她真正在做的事，是替自己找一个<mark>不会被被人收走的位置</mark>。</p>
+      <div class="tag">重音：防守 / 带刺 / 不会被被人收走的位置 —— 段点，语速再压慢</div>
+      <audio controls preload="none" src="assets/audio/seg_03.mp3"></audio>
+    </div>
+    <div class="seg">
+      <div class="hd"><b>段 04 · 转折</b><em>20.56s / 6 条字幕</em></div>
+      <p>命运给黛玉安排的对照面，是薛宝钗。同样出身名门，同样进京待选，宝钗会做人，圆融、周全、人人夸赞。黛玉不会，也<mark>不屑会</mark>。可那时的大观园，<mark>只认一种好</mark>。</p>
+      <div class="tag">重音：对照面 / 薛宝钗 / 不屑会 / 只认一种好</div>
+      <audio controls preload="none" src="assets/audio/seg_04.mp3"></audio>
+    </div>
+    <div class="seg">
+      <div class="hd"><b>段 05 · 高潮</b><em>21.66s / 7 条字幕</em></div>
+      <p>真正致命的一击，不来自后院，<mark>来自等级</mark>。金玉良缘四个字定了，贾家需要一个能帮着撑起门面的媳妇，黛玉的门第，用的是贾母的慈爱，<mark>不是她自己的姓</mark>。这一点，没人敢挑明，也没人能改。</p>
+      <div class="tag">重音：来自等级 / 金玉良缘 / 不是她自己的姓 —— 全片最紧的一段</div>
+      <audio controls preload="none" src="assets/audio/seg_05.mp3"></audio>
+    </div>
+    <div class="seg">
+      <div class="hd"><b>段 06 · 点题</b><em>19.64s / 6 条字幕</em></div>
+      <p>于是黛玉<mark>只能死</mark>。她死的那天，是宝玉大婚的同一天，鞭炮声从荣国府一直传到潇湘馆。她烧了诗稿，咽下最后一句话，问他那一句，你看书，只能给她一个<mark>干净的结局</mark>。</p>
+      <div class="tag">重音：只能死 / 大婚的同一天 / 干净的结局 —— 音乐几乎撤空，靠旁白平静反衬</div>
+      <audio controls preload="none" src="assets/audio/seg_06.mp3"></audio>
+    </div>
+    <div class="seg">
+      <div class="hd"><b>段 07 · 留白</b><em>18.31s / 6 条字幕</em></div>
+      <p>很多人说这是悲剧。可我们今天读到的黛玉，其实是<mark>被保护起来的那个</mark>。她没有学会妥协，所以作者只好把她带走。愿赌服输，是她的温柔，也是她的失败。</p>
+      <div class="tag">重音：被保护起来的 / 没有学会妥协 / 失败 —— 末句后留 2 秒静默</div>
+      <audio controls preload="none" src="assets/audio/seg_07.mp3"></audio>
+    </div>
+  </div>
+
+  <div class="copy-pane" data-p="1">
+    <div class="seg"><div class="hd"><b>冷开场</b><em>钩子原理</em></div>
+      <p>前 8 秒必须给出一个"想知道后面发生了什么"的理由。本片用<mark>反常细节 + 结果前置</mark>：十八岁就死掉的诗人——这个事实本身就是钩子，无需制造冲突。</p>
+      <div class="tag">前 18 秒不放音乐。让旁白独白，把注意力全压在文字上。</div></div>
+    <div class="seg"><div class="hd"><b>若重做，4 个备选钩子</b><em>悬念型 / 解读型 / 反直觉型 / 提问型</em></div>
+      <p>①「她今年十八岁｜林黛玉是怎么一步步走向死亡的」<br>②「《红楼梦》里最锋利的一把刀，是她自己的脾气吗」<br>③「金玉良缘定了的那天，她写下了一首诗」<br>④「愿赌服输，是黛玉的温柔，也是她的失败」</p></div>
+  </div>
+
+  <div class="copy-pane" data-p="2">
+    <div class="seg"><div class="hd"><b>立论</b><em>反直觉判断</em></div>
+      <p>大多数人读到这里会说"黛玉是被薛宝钗害死的"。本片要推翻的正是这个直觉：<mark>她的尖刻不是脾气，是警报</mark>。她在替自己找一个不会被人收走的位置——只是这个动作本身，消耗了她在园子里的容身余地。</p></div>
+    <div class="seg"><div class="hd"><b>对照组设计</b><em>宝钗 / 黛玉</em></div>
+      <p>宝钗会做人，圆融、周全、人人夸赞。黛玉不会，也不屑会。<mark>可那时的大观园，只认一种好。</mark>——两人从来不是善恶对立，是<strong>适配度</strong>的对立。</p></div>
+  </div>
+
+  <div class="copy-pane" data-p="3">
+    <div class="seg"><div class="hd"><b>核心论点</b><em>全片信息密度最高处</em></div>
+      <p>真正致命的一击，不来自后院，<mark>来自等级</mark>。贾家需要一个能帮着撑起门面的媳妇——黛玉的门第用的是贾母的慈爱，不是她自己的姓。<strong>这一点，没人敢挑明，也没人能改。</strong></p>
+      <div class="tag">短句连读 + 长句收尾。"没人能改"四个字落在句号上，音量收住。</div></div>
+    <div class="seg"><div class="hd"><b>画面配合</b><em>scene_05</em></div>
+      <p>金锁与旧帕两件物品隔空对望，不出现人物。抽象意象承担叙事，比直接画人物更克制，也避免了 AI 生图的人脸不确定性。</p></div>
+  </div>
+
+  <div class="copy-pane" data-p="4">
+    <div class="seg"><div class="hd"><b>点题手法</b><em>先给死因，再翻转</em></div>
+      <p>"于是黛玉只能死"——先承认宿命，再翻转到今天的阅读："她其实是被保护起来的那个。"<mark>她没有学会妥协，所以作者只好把她带走。</mark></p>
+      <div class="tag">这句是全片的落点。语速最慢，音量收至 80%，后面留 2 秒静默。</div></div>
+  </div>
+
+  <div class="copy-pane" data-p="5">
+    <div class="seg"><div class="hd"><b>收尾原则</b><em>不把故事讲完</em></div>
+      <p>留白段不做总结陈词，只给一个可迁移的判断：<mark>愿赌服输，是她的温柔，也是她的失败。</mark>观众带着问题离开，比被说服更有余味。</p></div>
+    <div class="seg"><div class="hd"><b>画面收尾</b><em>scene_07</em></div>
+      <p>竹影、落叶、空亭，人物已去。<strong>大面积留白</strong>——最后一帧不给人物脸，情绪交给观众。</p></div>
+  </div>
+
+  <h3>内容红线</h3>
+  <div class="card">
+    <p style="margin:0;font-size:14px;color:var(--ink-2)">
+      只使用<strong>公有领域原著</strong>与<strong>公认的文学解读</strong>。涉及黛玉判词、葬花吟等一律改为转述，不直引、不编造原文。
+      人物称谓用通行译名（贾宝玉 / 林黛玉 / 薛宝钗 / 贾母），不做戏说改编。
+    </p>
+  </div>
+</section>
+
+<!-- 4 素材 -->
+<section id="asset" class="reveal">
+  <div class="sec-no">04 / ASSETS</div>
+  <h2>素材</h2>
+  <p class="sec-desc">
+    7 张配图全部由 AI 生成，风格锚点：<strong>中国古典水墨写意淡彩，宣纸质感，暖褐与朱砂红</strong>。
+    第一张为基准图，其余 6 张一律走图生图派生——点击可放大。
+  </p>
+
+  <div class="gallery" id="gal">
+    <figure class="shot" data-full="assets/img/scene_01.jpg" data-cap="镜 01 · 黛玉泪痕侧脸特写 · 全片风格锚点基准图">
+      <div class="ph"><img src="assets/img/scene_01.jpg" alt="黛玉泪痕特写" loading="lazy"><span class="no">SCENE 01</span><span class="dur">18.08s</span></div>
+      <div class="bd"><h5>黛玉泪痕侧脸特写</h5><p>全片锚点基准图，其余 6 张均以此为参考派生</p><div class="emo">悬念 · 压抑</div></div>
+    </figure>
+    <figure class="shot" data-full="assets/img/scene_02.jpg" data-cap="镜 02 · 大观园俯视全景 · 文生图">
+      <div class="ph"><img src="assets/img/scene_02.jpg" alt="大观园全景" loading="lazy"><span class="no">SCENE 02</span><span class="dur">19.12s</span></div>
+      <div class="bd"><h5>大观园俯视全景</h5><p>亭台水榭、曲桥回廊，人物极小如点景</p><div class="emo">铺陈 · 富贵</div></div>
+    </figure>
+    <figure class="shot" data-full="assets/img/scene_03.jpg" data-cap="镜 03 · 庭院对峙 · 图生图派生">
+      <div class="ph"><img src="assets/img/scene_03.jpg" alt="庭院对峙" loading="lazy"><span class="no">SCENE 03</span><span class="dur">18.86s</span></div>
+      <div class="bd"><h5>庭院对峙</h5><p>衣袖扬起、眼神锋利，众人退散的中景</p><div class="emo">紧张 · 锋利</div></div>
+    </figure>
+    <figure class="shot" data-full="assets/img/scene_04.jpg" data-cap="镜 04 · 双女对照 · 图生图派生">
+      <div class="ph"><img src="assets/img/scene_04.jpg" alt="双女对照" loading="lazy"><span class="no">SCENE 04</span><span class="dur">20.56s</span></div>
+      <div class="bd"><h5>双女对照</h5><p>宝钗执扇低眉，黛玉独立一侧，两人互不对视</p><div class="emo">对照 · 微妙</div></div>
+    </figure>
+    <figure class="shot" data-full="assets/img/scene_05.jpg" data-cap="镜 05 · 金锁与旧帕 · 图生图派生">
+      <div class="ph"><img src="assets/img/scene_05.jpg" alt="金锁与旧帕" loading="lazy"><span class="no">SCENE 05</span><span class="dur">21.66s</span></div>
+      <div class="bd"><h5>金锁与旧帕</h5><p>特写静物，两件物品隔空对望，不出现人物</p><div class="emo">压抑 · 宿命</div></div>
+    </figure>
+    <figure class="shot" data-full="assets/img/scene_06.jpg" data-cap="镜 06 · 潇湘馆残烛 · 图生图派生">
+      <div class="ph"><img src="assets/img/scene_06.jpg" alt="潇湘馆残烛" loading="lazy"><span class="no">SCENE 06</span><span class="dur">19.64s</span></div>
+      <div class="bd"><h5>潇湘馆残烛</h5><p>窗内烛火将尽，窗外远处虚焦红绸喜字</p><div class="emo">悲怆 · 极静</div></div>
+    </figure>
+    <figure class="shot" data-full="assets/img/scene_07.jpg" data-cap="镜 07 · 竹影留白 · 图生图派生">
+      <div class="ph"><img src="assets/img/scene_07.jpg" alt="竹影留白" loading="lazy"><span class="no">SCENE 07</span><span class="dur">18.31s</span></div>
+      <div class="bd"><h5>竹影留白</h5><p>竹叶落满石阶小径，人物已去只余空亭</p><div class="emo">释然 · 余韵</div></div>
+    </figure>
+  </div>
+
+  <h3 style="margin-top:40px">锚点链：风格为什么不会漂移</h3>
+  <div class="card">
+    <div class="tablewrap" style="border:0">
+      <table class="assets-tbl">
+        <thead><tr><th>环节</th><th>做法</th><th>为什么</th></tr></thead>
+        <tbody>
+          <tr><td><b>锚点先行</b></td><td>先出 1 张基准图，确认后才铺开</td><td>基准没定就批量生产 = 批量返工</td></tr>
+          <tr><td><b>派生走图生图</b></td><td>以基准图为 <code>image1</code>，<code>fidelity: high</code></td><td>纯文字重述风格拿到的是"像但不是同一个"</td></tr>
+          <tr><td><b>画幅全套统一</b></td><td>7 张全部 1536×1024，逐张核对</td><td>中途改画幅要整批重做</td></tr>
+          <tr><td><b>景别强制区分</b></td><td>特写 / 全景 / 中景 / 双人 / 静物 / 室内 / 空景</td><td>避免两张图近似，视觉上像"换图"</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3 style="margin-top:36px">完整素材清单</h3>
+  <div class="tablewrap">
+    <table class="assets-tbl">
+      <thead><tr><th>类别</th><th>文件</th><th>数量</th><th>规格</th><th>对应关系</th></tr></thead>
+      <tbody>
+        <tr><td>配图</td><td><code>images/scene_01..07.png</code></td><td class="n">7</td><td>1536×1024</td><td>与 storyboard 的 id 严格对应</td></tr>
+        <tr><td>语音</td><td><code>voice/seg_01..07.mp3</code></td><td class="n">7</td><td>AAC 160k</td><td>同上，一一对应</td></tr>
+        <tr><td>时长表</td><td><code>voice/manifest.json</code></td><td class="n">1</td><td>—</td><td>记录每段真实时长，字幕据此对齐</td></tr>
+        <tr><td>字幕</td><td><code>subtitles.srt</code></td><td class="n">44</td><td>SRT</td><td>时间轴按文字字数比例分配</td></tr>
+        <tr><td>成片</td><td><code>build/红楼梦-为什么林黛玉活不过大观园.mp4</code></td><td class="n">1</td><td>1080P / 32MB</td><td>已含转场、推镜、烧录字幕</td></tr>
+        <tr><td>封面</td><td><code>build/cover.jpg</code></td><td class="n">1</td><td>1080P</td><td>取自成片第 1 秒</td></tr>
+        <tr><td>配置</td><td><code>storyboard.json</code></td><td class="n">1</td><td>—</td><td>整条流水线的单一事实来源</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 5 方法 -->
+<section id="method" class="reveal">
+  <div class="sec-no">05 / METHOD</div>
+  <h2>方法</h2>
+  <p class="sec-desc">
+    这次做的核心不是"生成了一条视频"，而是<strong>把整条链路做成了可复用的能力包</strong>。以下五个方法决定了它能跑通。
+  </p>
+
+  <div class="methods">
+    <div class="m"><span class="num">01</span><span class="ico">◈</span>
+      <h4>单一事实来源</h4>
+      <p>不写散落在各处的配置。整个项目只有一个 <code>storyboard.json</code>，五个环节全读它。改一句台词就能重跑语音、字幕、成片——不需要回忆"上次是在哪个文件里改的"。</p></div>
+    <div class="m"><span class="num">02</span><span class="ico">◉</span>
+      <h4>编号即对齐</h4>
+      <p>场号 <code>id</code>、音频 <code>seg_NN</code>、配图 <code>scene_NN</code> 严格一一对应。生成后统一改名重排，脚本不做任何智能匹配——<strong>编号一致 = 对齐正确</strong>，比文件名语义可靠得多。</p></div>
+    <div class="m"><span class="num">03</span><span class="ico">▣</span>
+      <h4>锚点链防漂移</h4>
+      <p>先出 1 张基准图并确认，再以它为参考图派生其余 6 张。这是 AI 配图保持风格统一的唯一可靠方法，纯靠文字描述必然漂移。</p></div>
+    <div class="m"><span class="num">04</span><span class="ico">▤</span>
+      <h4>实测替代估算</h4>
+      <p>镜头时长不靠字数估算，直接读音频的真实时长。写稿时给的时间码通常比实际朗读偏高 20–30%——<strong>实测值才是唯一依据</strong>。</p></div>
+    <div class="m"><span class="num">05</span><span class="ico">◇</span>
+      <h4>静帧也要动</h4>
+      <p>静态图直接铺满会显得死板。每场叠 1.08× 缓慢推镜，场间加 0.4s 交叉溶解——<strong>不加这两层，成片一眼就是"PPT 朗读"</strong>。</p></div>
+    <div class="m"><span class="num">06</span><span class="ico">◐</span>
+      <h4>克制优先于煽情</h4>
+      <p>悲剧内核的名著，旁白越冷静，反衬越有力。不用哭腔、不堆音乐，第 1 场和第 6 场主动留白。</p></div>
+  </div>
+
+  <h3>踩过的坑，以及怎么修的</h3>
+  <div class="pitfall">
+    <h4>坑 01 · 本地 TTS 静默挂死</h4>
+    <p><strong>现象：</strong>pyttsx3 / Windows SAPI 在同一进程内连续合成多段时，第 2 段起 <code>runAndWait()</code> 永不返回，<strong>且不报任何错</strong>——整个流水线静默卡死，实际卡了 9 分钟。</p>
+    <p><strong>根因：</strong>SAPI 的 COM 状态在长文本连续调用后污染，同进程内无法恢复。</p>
+    <p><span class="fix">解法：</span>拆出 <code>_tts_one.py</code>，<strong>每段一个独立子进程</strong>，主进程用 <code>subprocess.run(timeout=len(text)*0.9)</code> 把关，超时即跳过该段并记入失败列表。重跑后 7 段 136 秒全部成功。</p>
+  </div>
+  <div class="pitfall">
+    <h4>坑 02 · 在线 TTS 被服务端拒绝</h4>
+    <p><strong>现象：</strong>Edge TTS 全线返回 <code>403 WSServerHandshakeError</code>，7 段全失败。</p>
+    <p><strong>判定：</strong>环境性限制，与代码无关。</p>
+    <p><span class="fix">解法：</span>做三档引擎回落 <code>auto / edge / local</code>。<code>auto</code> 先试在线，失败自动用本地系统语音补齐成片。换环境后仍可用 <code>--engine=edge --voice=zh-CN-YunjianNeural</code> 重跑拿到更好音色。</p>
+  </div>
+  <div class="pitfall">
+    <h4>坑 03 · 字幕烧录的路径转义</h4>
+    <p><strong>现象：</strong>ffmpeg 报 <code>Error parsing a filter description</code>，成片直接失败。</p>
+    <p><strong>根因：</strong><code>subtitles</code> 滤镜的 <code>filename</code> 参数里，Windows 路径的 <code>\</code> 和 <code>:</code> 需转义。</p>
+    <p><span class="fix">解法：</span>反斜杠换正斜杠，冒号与单引号加反斜杠转义。同时把字幕烧录拆成独立一遍，不与画面滤镜混在一条链上。</p>
+  </div>
+  <div class="pitfall">
+    <h4>坑 04 · 命令行参数被误解析</h4>
+    <p><strong>现象：</strong><code>--rate -8%</code> 报 <code>expected one argument</code>——值以 <code>-</code> 开头，被当成新选项了。</p>
+    <p><span class="fix">解法：</span>必须用等号写法：<code>--rate=-8%</code>。这条已写进技能文档，避免下次重踩。</p>
+  </div>
+</section>
+
+<!-- 6 工具 -->
+<section id="tool" class="reveal">
+  <div class="sec-no">06 / TOOLS</div>
+  <h2>工具</h2>
+  <p class="sec-desc">
+    全链路零人工剪辑。Agent 负责判断与写作，脚本负责重复劳动，ffmpeg 负责渲染。
+  </p>
+
+  <div class="tools">
+    <div class="tool">
+      <div class="th"><h4>WorkBuddy</h4><span class="ver">Agent</span></div>
+      <div class="role">主控 · 策划写作</div>
+      <p>剧本创作、分镜编排、选题判断、镜头表生成，以及调用全部脚本与配图能力。</p>
+    </div>
+    <div class="tool">
+      <div class="th"><h4>ImageGen</h4><span class="ver">AI 图像</span></div>
+      <div class="role">配图生成</div>
+      <p>首张文生图定风格锚点，其余 6 张以锚点为 <code>image1</code> 图生图派生，保证 7 张同一画风。</p>
+    </div>
+    <div class="tool">
+      <div class="th"><h4>Edge TTS</h4><span class="ver">在线语音</span></div>
+      <div class="role">配音首选</div>
+      <p>免费多音色中文语音。音色优于本地引擎，但本机被服务端 403 拒绝，已自动回落。</p>
+    </div>
+    <div class="tool">
+      <div class="th"><h4>pyttsx3</h4><span class="ver">离线语音</span></div>
+      <div class="role">配音兜底</div>
+      <p>调用 Windows 系统语音（微软 Huihui 中文女声），170 WPM。完全离线、音质偏平但稳定。</p>
+    </div>
+    <div class="tool">
+      <div class="th"><h4>imageio-ffmpeg</h4><span class="ver">7.1</span></div>
+      <div class="role">渲染引擎</div>
+      <p>自带 ffmpeg 二进制，免安装。负责推镜、交叉溶解、字幕烧录、封面抽帧。</p>
+    </div>
+    <div class="tool">
+      <div class="th"><h4>Pillow</h4><span class="ver">图像</span></div>
+      <div class="role">素材处理</div>
+      <p>配图尺寸核验、Web 版式转 JPG 压缩（32MB → 2.6MB，7 张）。</p>
+    </div>
+    <div class="tool">
+      <div class="th"><h4>HTML / CSS / JS</h4><span class="ver">原生</span></div>
+      <div class="role">汇报网页</div>
+      <p>本页面。原生三件套，无框架依赖，可直接部署到 GitHub Pages。</p>
+    </div>
+    <div class="tool">
+      <div class="th"><h4>剪映 / Remotion</h4><span class="ver">备选路线</span></div>
+      <div class="role">未采用</div>
+      <p>需复杂动效或图文动画时改走 Remotion；需人工精修时导出剪映草稿。本片零人工剪辑，用不上。</p>
+    </div>
+  </div>
+
+  <h3>技能包结构</h3>
+  <p class="sec-desc" style="margin-bottom:12px">
+    最终沉淀为一个可复用 Skill：给一个书名，就能自动生成同规格的讲解视频。
+  </p>
+  <div class="skill-tree">~/.workbuddy/skills/classic-novel-video/
+├── <span class="k">SKILL.md</span>                <span class="c">← 主说明：四环节流程与决策表</span>
+├── references/
+│   ├── <span class="k">script-playbook.md</span>    <span class="c">← 标题技法、分镜结构、文案节奏</span>
+│   ├── <span class="k">script-schema.md</span>      <span class="c">← storyboard.json 字段规范与校验清单</span>
+│   ├── <span class="k">image-pipeline.md</span>     <span class="c">← 锚点链、防漂移检查项</span>
+│   ├── <span class="k">voice-and-caption.md</span>  <span class="c">← 音色预设、字幕断句、三个必踩坑</span>
+│   ├── <span class="k">video-assembly.md</span>     <span class="c">← 手动方案 A / 自动成片 B</span>
+│   ├── <span class="k">style-anchor.md</span>       <span class="c">← 画风锚点写法</span>
+│   └── <span class="k">templates.md</span>          <span class="c">← 各环节产物模板</span>
+└── scripts/
+    ├── <span class="d">tts_build.py</span>           <span class="c">← 语音合成（三档引擎自动回落）</span>
+    ├── <span class="d">_tts_one.py</span>            <span class="c">← 单段子进程（关键：解决挂死）</span>
+    ├── <span class="d">make_srt.py</span>            <span class="c">← 字幕生成（按实测时长分配）</span>
+    └── <span class="d">assemble.py</span>            <span class="c">← 成片合成（推镜+转场+字幕）</span></div>
+
+  <div class="skill-files">
+    <div class="sf"><b>tts_build.py</b><span>读 storyboard 逐段合成 mp3，探测真实时长写入 manifest.json</span></div>
+    <div class="sf"><b>_tts_one.py</b><span>单段隔离进程 + 超时强杀，根治 SAPI 连续合成挂死</span></div>
+    <div class="sf"><b>make_srt.py</b><span>句号 → 逗号 → 硬切三级断句，单字行并回上一行</span></div>
+    <div class="sf"><b>assemble.py</b><span>zoompan 推镜 + xfade 溶解 + subtitles 烧录 + 封面抽帧</span></div>
+    <div class="sf"><b>script-schema.md</b><span>字段规范、落盘前校验清单、改动→重跑策略矩阵</span></div>
+    <div class="sf"><b>SKILL.md</b><span>触发条件、四环节流程、四类音色预设、四项必问决策</span></div>
+  </div>
+
+  <h3>三步跑完</h3>
+  <div class="card">
+    <pre style="font-family:var(--mono);font-size:13px;line-height:2;margin:0;overflow-x:auto"><span style="color:var(--ink-3)"># 依赖（ffmpeg 用 imageio-ffmpeg 自带二进制，免安装）</span>
+pip install edge-tts imageio-ffmpeg pillow pyttsx3
+
+<span style="color:var(--ink-3)"># 1) 语音合成</span>
+python scripts/tts_build.py &lt;项目目录&gt; --engine=auto --local-rate=170
+
+<span style="color:var(--ink-3)"># 2) 生成字幕</span>
+python scripts/make_srt.py &lt;项目目录&gt; --max-chars 18
+
+<span style="color:var(--ink-3)"># 3) 合成成片（约 9 分钟）</span>
+python scripts/assemble.py &lt;项目目录&gt; --fps 30 --subtitles on</pre>
+    <p style="margin:14px 0 0;font-size:13px;color:var(--ink-3)">⚠️ 参数以 <code style="font-family:var(--mono)">-</code> 开头时必须用等号：<code style="font-family:var(--mono)">--rate=-8%</code></p>
+  </div>
+</section>
+
+<!-- 7 视频 -->
+<section id="video" class="reveal">
+  <div class="sec-no">07 / VIDEO</div>
+  <h2>视频</h2>
+  <p class="sec-desc">
+    成片 133.83 秒 · 1920×1080 @ 30fps · H.264 CRF20 · AAC 160k。
+    已内置 44 条烧录字幕，可直接上传 B站 / 视频号 / 抖音横版。
+  </p>
+
+  <div class="player">
+    <video id="pv" controls preload="metadata" poster="assets/img/scene_01.jpg" playsinline>
+      <source src="assets/video/hlm.mp4" type="video/mp4">
+      你的浏览器不支持 video 标签，请<a href="assets/video/hlm.mp4" download>下载观看</a>。
+    </video>
+    <div class="player-bar">
+      <span class="spec">红楼梦-为什么林黛玉活不过大观园.mp4 · 133.83s · 1920×1080 · 32.2MB</span>
+      <a class="dl" href="assets/video/hlm.mp4" download>↓ 下载成片</a>
+    </div>
+  </div>
+
+  <h3 style="margin-top:36px">点击跳转场次</h3>
+  <div class="bm" id="bm">
+    <div class="bm-item on" data-t="0"><div class="t">00:00</div><div class="n">冷开场</div><div class="d">18.08s</div></div>
+    <div class="bm-item" data-t="18.08"><div class="t">00:18</div><div class="n">铺陈</div><div class="d">19.12s</div></div>
+    <div class="bm-item" data-t="36.80"><div class="t">00:37</div><div class="n">冲突</div><div class="d">18.86s</div></div>
+    <div class="bm-item" data-t="55.26"><div class="t">00:55</div><div class="n">转折</div><div class="d">20.56s</div></div>
+    <div class="bm-item" data-t="75.42"><div class="t">01:15</div><div class="n">高潮</div><div class="d">21.66s</div></div>
+    <div class="bm-item" data-t="96.68"><div class="t">01:37</div><div class="n">点题</div><div class="d">19.64s</div></div>
+    <div class="bm-item" data-t="115.92"><div class="t">01:56</div><div class="n">留白</div><div class="d">18.31s</div></div>
+  </div>
+
+  <h3 style="margin-top:36px">合成参数</h3>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>环节</th><th>参数</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td><b>画面推镜</b></td><td class="n">zoompan 1.00 → 1.08</td><td>每场缓慢推近，避免静帧死板</td></tr>
+        <tr><td><b>场间转场</b></td><td class="n">xfade + acrossfade 0.4s</td><td>音画同时交叠，不出现断点</td></tr>
+        <tr><td><b>字幕</b></td><td class="n">微软雅黑 20px / 白字黑描边</td><td>底部安全区内，边距 42px</td></tr>
+        <tr><td><b>字幕断句</b></td><td class="n">句号 → 逗号 → 硬切</td><td>单行 ≤18 字，单字行并回上一行</td></tr>
+        <tr><td><b>时间轴</b></td><td class="n">按字数比例分配实测时长</td><td>段间留 0.12s，最短显示 1.2s</td></tr>
+        <tr><td><b>视频编码</b></td><td class="n">libx264 / CRF 20 / yuv420p</td><td>各平台通用，无需二次转码</td></tr>
+        <tr><td><b>音频</b></td><td class="n">AAC 160k 单声道</td><td>源为 TTS 语音，无需立体声</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 8 总结 -->
+<section id="sum" class="reveal">
+  <div class="sec-no">08 / SUMMARY</div>
+  <h2>总结</h2>
+  <p class="sec-desc">这次作业真正的收获不是一条视频，是把踩过的坑变成了一套不会重犯的流程。</p>
+
+  <div class="stats">
+    <div class="stat"><b>133.83</b><span>成片秒数</span></div>
+    <div class="stat"><b>7</b><span>分镜场次</span></div>
+    <div class="stat"><b>7</b><span>AI 配图</span></div>
+    <div class="stat"><b>44</b><span>字幕条数</span></div>
+    <div class="stat"><b>4</b><span>自研脚本</span></div>
+    <div class="stat"><b>0</b><span>手工剪辑分钟</span></div>
+  </div>
+
+  <div class="sum-grid">
+    <div class="sum">
+      <h4>做成了什么</h4>
+      <ul>
+        <li>一条 <b>133 秒</b>的《红楼梦》讲解视频，含配音、字幕、转场、成片</li>
+        <li>一套 <b>7 张风格统一</b>的水墨风 AI 配图</li>
+        <li>一个 <b>可复用的 Skill</b>：换一个书名即可产出同规格视频</li>
+        <li>七个踩坑经验<b>已写回技能文档</b>，下次不会重犯</li>
+      </ul>
+    </div>
+    <div class="sum">
+      <h4>关键认识</h4>
+      <ul>
+        <li><b>单一事实来源</b>比任何提示词技巧都重要——它决定了改动能否低成本传播</li>
+        <li><b>AI 配图的一致性</b>靠锚点链，不靠反复改提示词</li>
+        <li><b>实测时长</b>是唯一依据，字数估算会偏 20–30%</li>
+        <li><b>静帧 + 推镜 + 溶解</b>三层叠加，才能脱离"PPT 朗读"的观感</li>
+        <li><b>留白</b>比配乐更有力，尤其在悲剧题材上</li>
+      </ul>
+    </div>
+    <div class="sum">
+      <h4>遇到的问题</h4>
+      <ul>
+        <li>Edge TTS 被服务端 <b>403 拒绝</b>，全线失败 → 三档引擎回落</li>
+        <li>本地 TTS <b>静默挂死</b> 9 分钟 → 每段独立子进程 + 超时强杀</li>
+        <li>ffmpeg 字幕滤镜 <b>路径转义</b>失败 → 独立一遍烧录 + 转义处理</li>
+        <li>参数以 <code>-</code> 开头被误解析 → 强制等号写法</li>
+      </ul>
+    </div>
+    <div class="sum">
+      <h4>可改进之处</h4>
+      <ul>
+        <li>本片为 <b>横版</b>，抖音/视频号需另做竖版配图（不能裁切）</li>
+        <li>画面为静态图 + 推镜，可用图生视频增加动态</li>
+        <li>本地音色偏平，换环境后应用 Edge TTS 重跑配音</li>
+        <li>可尝试 Remotion 做 <b>竖版</b>，抖音对完播率更友好</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>如果再做一本</h3>
+  <div class="next">
+    <h4>换一本书，实际只需要做两件事</h4>
+    <ol>
+      <li>确认 <strong>书名 + 切入角度</strong>——技能会给出 2–3 个角度候选及各自的视频适配度</li>
+      <li>写出 <code>storyboard.json</code>（7 场左右，每场 40–80 字口播）</li>
+    </ol>
+    <p style="margin:18px 0 0;font-size:13.5px;color:#b9ae9e">
+      之后三条命令，语音、字幕、成片自动完成。换《聊斋》《活着》《百年孤独》都一样。
+    </p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <b>红楼梦 · 为什么林黛玉活不过大观园</b>
+  《新媒体交互设计》作业一 · AI 讲解视频自动生成技能<br>
+  剧本 / 配音 / 配图 / 字幕 / 合成 全流程 AI 自动化
+</footer>
+
+<div class="lightbox" id="lb">
+  <img src="" alt="放大预览" id="lbImg">
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+// 栏目切换
+document.getElementById('tabs').addEventListener('click',function(e){
+  const b=e.target.closest('button'); if(!b)return;
+  [...this.querySelectorAll('button')].forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.copy-pane').forEach(p=>
+    p.classList.toggle('on',p.dataset.p===b.dataset.i));
+});
+
+// 图片放大
+const lb=document.getElementById('lb');
+document.getElementById('gal').addEventListener('click',function(e){
+  const f=e.target.closest('.shot'); if(!f)return;
+  document.getElementById('lbImg').src=f.dataset.full;
+  document.getElementById('lbCap').textContent=f.dataset.cap;
+  lb.classList.add('on');
+});
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+
+// 场次跳转
+const pv=document.getElementById('pv');
+document.getElementById('bm').addEventListener('click',function(e){
+  const it=e.target.closest('.bm-item'); if(!it)return;
+  [...this.querySelectorAll('.bm-item')].forEach(x=>x.classList.toggle('on',x===it));
+  pv.currentTime=parseFloat(it.dataset.t);
+  pv.play().catch(()=>{});
+});
+
+// 滚动淡入
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+},{threshold:.06,rootMargin:'0px 0px -40px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
